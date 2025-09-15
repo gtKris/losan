@@ -7,19 +7,32 @@ body {
   }
   
   /* Header */
-  header {
-    background-color: #111;
+header {
+    width: 100%;                  /* asegura que ocupe todo el ancho */
+    background-color:#ffffff;
     color: white;
     text-align: center;
-    padding: 2rem 1rem;
+    padding: -10rem -7rem;           /* espacio vertical y horizontal */
     position: relative;
     overflow: hidden;
-  }
-  
-  header img {
-    max-width: 220px;
-    margin-bottom: 1rem;
-  }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+
+    height: 200px;
+    background-color: #ffffff;
+    overflow: hidden;
+    position: relative;
+    width: 40%;        /* ocupa todo el ancho del header */       /* mantiene proporción vertical */  /* opcional: para no hacerlo demasiado alto */
+    object-fit: cover;  /* rellena el ancho sin deformarse */
+    z-index: 1;
+    position: relative;
+    margin: 0;          /* quitar márgenes para que toque los bordes */
+}
   
   header h1 {
     font-size: 3rem;
@@ -27,28 +40,10 @@ body {
     color: #e60000;
   }
   
-  header p {
-    font-size: 1.5rem;
-    margin: 0;
-    color: #ccc;
-  }
-  
-  .logo-section {
-    display: flex;
-    justify-content: center;      /* centra horizontalmente */
-    align-items: center;          /* centra verticalmente */
-    height: 120px;                /* franja compacta */
-    background: url('../img/fondo-herramientas.jpg') center/cover no-repeat; /* fondo de herramientas */
-    opacity: 0.05;                /* muy tenue */
-    overflow: hidden;
-    margin-bottom: 2rem;
-    position: relative;
-  }
-  
- 
+
   .herramientas-section {
     height: 150px;
-    background-color: #f9f9f9;
+    background-color: #ffffff;
     overflow: hidden;
     position: relative;
   }
